@@ -1,62 +1,27 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <title>내 첫 웹사이트</title>
+<!DOCTYPE html> 
+<html lang="ko"> 
+    <head>
+        <meta charset="UTF-8"> 
+        <title>내 첫 웹사이트</title> 
     <style>
-        /* 로그인 폼 전체 박스 */
-        #form_container {
-            display: inline-block;
-            border: 1px solid black;
-            padding: 20px;
-        }
-
-        /* 한 줄씩 정렬 */
-        #form_container div {
-            margin-bottom: 10px;
-        }
-
-        /* 라벨 정렬 */
-        label {
-            display: inline-block;
-            width: 50px;
-            text-align: right;
-            margin-right: 5px;
-        }
-
-        /* 로그인 버튼 가운데 */
-        #form_container div:last-child {
-            text-align: center;
-        }
-
-        button {
-            padding: 6px 20px;
-            cursor: pointer;
-        }
+        #form_container { display:inline-block; width:fit-content; border: 1px solid black; padding:15px;}
+        label{display:inline-block; width:50px; text-align:right;}
     </style>
-</head>
-<body>
-
-<h1>안녕하세요!</h1>
-<p>이건 기본 HTML 페이지입니다.</p>
-
-<div id="form_container">
-    <form>
-        <div>
-            <label for="uid">아이디</label>
-            <input type="text" name="uid" id="uid">
-        </div>
-
-        <div>
-            <label for="pwd">암호</label>
-            <input type="password" name="pwd" id="pwd">
-        </div>
-
-        <div>
-            <button type="submit">로그인</button>
-        </div>
-    </form>
-</div>
-
-</body>
-</html>
+    </head> 
+    <body>
+     <div id="form_container"> 
+         <form> 
+             <div>
+                 <label for="uid">아이디</label> 
+                 <input type="text" name="uid" id="uid">
+             </div>   
+             <div> 
+                 <label for="pwd">암호</label> 
+                 <input type="password" name="pwd" id="pwd"> 
+             </div>
+             <div> 
+                 <button type="submit">로그인</button>
+             </div> 
+         </form> 
+     </div>
+     </body>
