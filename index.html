@@ -2,35 +2,46 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>ERP Practice Page</title>
+  <title>ERP 연습 페이지</title>
   <style>
-    /* 전체 컨테이너 */
-    .container {
-      display: flex;          /* 좌우 배치 */
+    /* 제목 */
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      padding: 10px;
+      border: 1px solid #000; /* 1px border 유지 */
+      margin-bottom: 16px;
+    }
+
+    /* hello + world 영역 */
+    .content {
+      display: flex;              /* 좌우 배치 */
       justify-content: flex-start; /* 좌측 정렬 */
-      align-items: center;    /* 세로 가운데 정렬 */
-      gap: 12px;              /* hello와 world 사이 간격 */
-      padding: 20px;
+      align-items: center;
+      gap: 12px;
     }
 
     /* hello: 글자 속성 */
     .hello {
-      font-size: 20px;
-      font-weight: bold;
+      font-size: 18px;
       color: #222;
     }
 
     /* world: 배경색 */
     .world {
       background-color: #4CAF50;
-      color: white;
+      color: #fff;
       padding: 6px 12px;
     }
   </style>
 </head>
 <body>
 
-  <div class="container">
+  <!-- 제목 (사라지면 안 되는 부분) -->
+  <div class="title">ERP 연습용 페이지</div>
+
+  <!-- hello / world -->
+  <div class="content">
     <div class="hello">hello</div>
     <div class="world">world</div>
   </div>
