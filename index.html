@@ -6,17 +6,18 @@
   <style>
     /* 제목 */
     .title {
+      display: inline-block;      /* 핵심: 글자 길이만큼만 */
       font-size: 24px;
       font-weight: bold;
       padding: 10px;
-      border: 1px solid #000; /* 1px border 유지 */
-      margin-bottom: 16px;
+      border: 1px solid #000;
+      margin-bottom: 20px;        /* 제목과 아래 요소 20px */
     }
 
     /* hello + world 영역 */
     .content {
-      display: flex;              /* 좌우 배치 */
-      justify-content: flex-start; /* 좌측 정렬 */
+      display: flex;
+      justify-content: flex-start;
       align-items: center;
       gap: 12px;
     }
@@ -37,7 +38,7 @@
 </head>
 <body>
 
-  <!-- 제목 (사라지면 안 되는 부분) -->
+  <!-- 제목 -->
   <div class="title">ERP 연습용 페이지</div>
 
   <!-- hello / world -->
