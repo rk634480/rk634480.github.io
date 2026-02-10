@@ -2,47 +2,50 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>ERP 연습 페이지</title>
+  <title>CSS 과제</title>
+
   <style>
-    /* 제목 */
-    .title {
-      display: inline-block;      /* 핵심: 글자 길이만큼만 */
-      font-size: 24px;
-      font-weight: bold;
-      padding: 10px;
-      border: 1px solid #000;
-      margin-bottom: 20px;        /* 제목과 아래 요소 20px */
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 16px;
+      margin-left: 20px; /* 좌측 여백 조금 줌 */
     }
 
-    /* hello + world 영역 */
-    .content {
+    /* 제목 */
+    h1 {
+      display: inline-block;
+      border: 1px solid #333; 
+      padding: 4px 8px;
+      margin-bottom: 20px; 
+    }
+
+    /* hello + world 컨테이너 */
+    .container {
       display: flex;
-      justify-content: flex-start;
-      align-items: center;
       gap: 12px;
     }
 
     /* hello: 글자 속성 */
     .hello {
       font-size: 18px;
-      color: #222;
+      color: #007bff;
     }
 
-    /* world: 배경색 */
+    /* world: 배경색, padding 축소 */
     .world {
       background-color: #4CAF50;
       color: #fff;
-      padding: 6px 12px;
+      padding: 2px 6px; /* ← 기존보다 5px 정도 줄임 */
+      font-size: 16px;
     }
   </style>
 </head>
+
 <body>
 
-  <!-- 제목 -->
-  <div class="title">ERP 연습용 페이지</div>
+  <h1>제목</h1>
 
-  <!-- hello / world -->
-  <div class="content">
+  <div class="container">
     <div class="hello">hello</div>
     <div class="world">world</div>
   </div>
