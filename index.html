@@ -5,51 +5,38 @@
 <title>CSS 선택자 연습</title>
 
 <style>
-  /* 기본 예시 스타일 */
   body {
     font-family: 'Segoe UI', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    text-align: left;
   }
 
+  /* 제목 */
   h1 {
     color: #007bff;
     background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid #000;   /* ← 추가된 요구사항 */
+    padding: 10px;
   }
 
+  /* 공통 div 스타일 */
   div {
-    padding: 10px;
     border: 2px solid #ccc;
-    margin: 20px;
   }
 
   /* 공통 박스 */
   .box {
-    margin: 20px;   /* 제목과의 간격 */
+    margin: 20px;   /* 제목과 20px 간격 */
     padding: 15px;
   }
 
-  /* hello → 글자 속성 */
+  /* hello : 글자 속성 */
   .hello {
-    color: blue;          /* 글자 색상 */
-    font-size: 20px;      /* 글자 크기 */
-    font-weight: bold;    /* 글자 굵기 */
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
   }
 
-  /* world → 배경색 */
+  /* world : 배경색 */
   .world {
-    background-color: yellow;
-  }
-</style>
-</head>
-
-<body>
-
-<h1>제목</h1>
-
-<div class="box hello">hello</div>
-<div class="box world">world</div>
-
-</body>
-</html>
+    background-
