@@ -1,6 +1,62 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <meta charset="UTF-8">
+  <title>CSS 속성 선택자 과제</title>
+
+  <style>
+
+.box {
+  background-color: #e0f7fa;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+    /* input focus */
+    #uid:focus {
+      outline: 2px solid blue;
+    }
+
+    /* 기본 a 스타일 */
+    a {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 4px;
+      color: white;
+      text-decoration: none;
+    }
+
+    /* home 전용 */
+    .home {
+      color: blue;
+    }
+
+  
+
+    /* nav 안의 a들 */
+    nav a:nth-child(1) { background-color: red; }
+    nav a:nth-child(2) { background-color: orange; }
+    nav a:nth-child(3) { background-color: yellow; color: black; }
+    nav a:nth-child(4) { background-color: green; }
+
+    /* google */
+    p > a {
+      background-color: blue;
+    }
+
+    /* home 제외하고 hover 시 손가락 표시 */
+    .home:not(.home):hover::before {
+      content: "👉 ";
+      color: orange;
+    }
+
+    .home:not(.home):hover::after {
+      content: " 👈";
+      color: green;
+    }
+
+  </style>
 <meta charset="UTF-8">
 <title>전체 배경 이미지</title>
 
@@ -26,11 +82,33 @@
 </head>
 
 <body>
+  <div>
 
+    <div>
+      <a class="home">home</a>
+    </div>
+
+    <div>
+      아이디
+      <input type="text" name="uid" id="uid">
+    </div>
+
+    <p>
+      <nav>
+        <a>python</a>
+        <a>html</a>
+        <a>css</a>
+        <a>javascript</a>
+      </nav>
+      <a>google</a>
+    </p>
+
+    <a>contact</a>
 <div class="content">
   <h1>배경 이미지 전체 적용</h1>
   <p>이 콘텐츠 뒤에 이미지가 깔립니다.</p>
 </div>
 
+  </div>
 </body>
 </html>
