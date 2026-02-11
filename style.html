@@ -48,12 +48,12 @@
     }
 
     /* home 제외하고 hover 시 손가락 표시 */
-    a:not(.home):hover::before {
+    .home:not(.home):hover::before {
       content: "👉 ";
       color: orange;
     }
 
-    id:not(.home):hover::after {
+    .home:not(.home):hover::after {
       content: " 👈";
       color: green;
     }
