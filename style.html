@@ -34,7 +34,15 @@ a {
     p > a {
       background-color: blue;
     }
+p::before {
+  content: "👉 ";
+  color: orange;
+}
 
+p::after {
+  content: " ✅";
+  color: green;
+}
     /* contact */
     body > div > a:last-child {
       background-color: purple;
@@ -50,6 +58,7 @@ a {
 <div>
   아이디<input type="text" name="uid" id="uid"> <!--포커스를 받으면 outline을 청색-->
 </div>
+    a 태그에 마우스를 올리면 왼쪽에는 오른쪽을 가리는 손가락이 표시되고 오른쪽에는 왼쪽을 가리키는 손가락이 표시되도록 해보세요
     <p>
       <nav>
         <a>python</a>
