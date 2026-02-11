@@ -5,6 +5,7 @@
   <title>CSS 속성 선택자 과제</title>
 
   <style>
+  
     a {
       display: inline-block;
       padding: 6px 10px;
@@ -15,7 +16,7 @@
 
     /* home : 글자색만 파랑 */
     div > div > a {
-      color: blue;
+      color: blue; hover: background-color:red;
     }
 
     /* nav 안의 a들 */
@@ -39,9 +40,11 @@
 <body>
   <div>
     <div>
-      <a>home</a>
+      <a>home</a>    <--글자색을 파랗게, 마우스 올리면 배경색을 적색으로-->
     </div>
-
+<div>
+  아이디<input type="tesxt" nama="uid"> <!--포커스를 받으면 outline을 청색-->
+</div>
     <p>
       <nav>
         <a>python</a>
