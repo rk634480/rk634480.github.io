@@ -13,6 +13,11 @@
       text-decoration: none;
     }
 
+    /* home : 글자색만 파랑 */
+    div > div > a {
+      color: blue;
+    }
+
     /* nav 안의 a들 */
     nav a:nth-child(1) { background-color: red; }
     nav a:nth-child(2) { background-color: orange; }
@@ -25,29 +30,29 @@
     }
 
     /* contact */
-    div > a:last-child {
+    body > div > a:last-child {
       background-color: purple;
     }
   </style>
 </head>
 
 <body>
-<div>
   <div>
-    <a>home</a>
+    <div>
+      <a>home</a>
+    </div>
+
+    <p>
+      <nav>
+        <a>python</a>
+        <a>html</a>
+        <a>css</a>
+        <a>javascript</a>
+      </nav>
+      <a>google</a>
+    </p>
+
+    <a>contact</a>
   </div>
-
-  <p>
-    <nav>
-      <a>python</a>
-      <a>html</a>
-      <a>css</a>
-      <a>javascript</a>
-    </nav>
-    <a>google</a>
-  </p>
-
-  <a>contact</a>
-</div>
 </body>
 </html>
