@@ -2,9 +2,32 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>CSS 실습</title>
-<ul>
-  <a href="http://google.com">google</a> </li>
-  <a href="http://github.com">github</a></li>              
-  <a href="http://abc.com">abc news network</a></li>
-</ul>
+  <title>CSS 속성 선택자 과제</title>
+
+  <style>
+    /* href가 http:로 시작하는 a 태그 */
+    a[href^="http:"] {
+      background-color: yellow;
+    }
+
+    /* href에 github이 포함된 경우 */
+    a[href*="github"] {
+      background-color: lightblue;
+    }
+
+    /* href가 abc.com으로 끝나는 경우 */
+    a[href$="abc.com"] {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <a href="http://google.com">google</a> </li>
+    <a href="http://github.com">github</a></li>
+    <a href="http://abc.com">abc news network</a></li>
+  </ul>
+
+</body>
+</html>
